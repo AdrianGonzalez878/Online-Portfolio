@@ -1,0 +1,220 @@
+@charset "uutf_8";
+
+body{
+    background-color: whitesmoke;
+    
+}
+header{
+    text-align: center;
+   
+    
+}
+p{
+    color: whitesmoke;
+}
+
+
+.logo{
+    text-align: center;
+   
+    
+}
+.contenedor{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px;
+    display: flex;
+    gap: 20px;
+    background-color: rgb(44, 57, 196);
+}
+.sub{
+    background-color: rgb(44, 57, 196);
+}
+
+.contenedor-fotos{
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    
+}
+h3{
+    color: whitesmoke;
+}
+h2{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+.card{
+    border-radius: 20px;
+    min-height: 200px;
+    font-weight: bold;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center ;
+    width: calc(33.33%-20px);
+}
+.card .textos{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+
+}
+.card :hover{
+    transform: scale(1.15);
+    background-color: rgba(0, 0, 0, 0.776);
+}
+.banner{
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px;
+    background-size: cover;
+    background-position: center;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.banner h3{
+    text-align: center;
+    padding-top: 125px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+    
+}
+.banner:hover{
+    transform: scale(1.15);
+    background-color: rgba(0, 0, 0, 0.776);
+}
+footer{
+    background-color: rgb(44, 57, 196);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.social-icons{
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+.social-icons li{
+    margin: 0 20px;
+}
+.social-icons li a{
+    border: 3px solid whitesmoke;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: whitesmoke;
+    border-radius: 50%;
+    border-right: none;
+    border-top: none;
+    transition: 0.3s ease;
+}
+.social-icons li a:hover{
+    border-top: 3px solid;
+    border-right: 3px solid;
+    transform: rotate(360deg);
+    background-color: rgb(189, 70, 70);
+    border-color: rgb(44, 57, 196);;
+}
+aside {
+    text-align: center;
+    background-color:rgb(44, 57, 196);
+}
+aside h2{
+    color: whitesmoke;
+}
+section{
+    margin: 0;
+    background-color: whitesmoke;
+    text-align: center;
+    color: whitesmoke;
+}
+.container-carousel{
+    position: relative;
+    width: 320px;
+    margin: 100px auto 0 auto;
+    perspective: 1000px;
+}
+.carousel{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    animation: rotate360 60s infinite forwards linear;
+}
+.image{
+    position: absolute;
+    width: 300px;
+    height: 187px;
+    top: 20px;
+    left: 10px;
+    right: 10px;
+    background-size: cover;
+    box-shadow: inset 0 0 0 2000px rgba(0,0,0,0.5);
+    display:flex;
+}
+span{
+    margin: auto;
+    font-size: 2rem;
+}
+
+@keyframes rotate360{
+    from{
+        transform: rotateY(0deg);
+    }
+    to{
+        transform: rotatey(-360deg);
+    }
+    
+}
+.image:nth-child(1){
+    background-image: url("../html.html/Adrianfinalproyect/Images/tropies.jpeg");
+    transform: rotateY(0deg) translatez(430px);
+}
+.image:nth-child(2){
+    background-image: url("../html.html/Adrianfinalproyect/Images/tropies.jpeg");
+    transform: rotateY(40deg) translatez(430px);
+}
+.image:nth-child(3){
+    background-image: url("../html.html/Adrianfinalproyect/Images/tropies.jpeg");
+    transform: rotateY(80deg) translatez(430px);
+}
+.image:nth-child(4){
+    background-image: url("../html.html/Adrianfinalproyect/Images/tropies.jpeg");
+    transform: rotateY(120deg) translatez(430px);
+}
+.image:nth-child(5){
+    background-image: url("../html.html/Adrianfinalproyect/Images/tropies.jpeg");
+    transform: rotateY(160deg) translatez(430px);
+}
+.image:nth-child(6){
+    background-image: url("../html.html/Adrianfinalproyect/Images/tropies.jpeg");
+    transform: rotateY(200deg) translatez(430px);
+}
+.image:nth-child(7){
+    background-image: url("../html.html/Adrianfinalproyect/Images/tropies.jpeg");
+    transform: rotateY(240deg) translatez(430px);
+}
+.image:nth-child(8){
+    background-image: url("../html.html/Adrianfinalproyect/Images/tropies.jpeg");
+    transform: rotateY(280deg) translatez(430px);
+}
+.image:nth-child(9){
+    background-image: url("../html.html/Adrianfinalproyect/Images/tropies.jpeg");
+    transform: rotateY(320deg) translatez(430px);
+}
+.image:nth-child(10){
+    background-image: url("../html.html/Adrianfinalproyect/Images/tropies.jpeg");
+    transform: rotateY(360deg) translatez(430px);
+}

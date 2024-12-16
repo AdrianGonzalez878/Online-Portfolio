@@ -1,0 +1,15 @@
+@charset "uutf_8";
+* {
+    box-sizing: border_box;
+}
+
+body{
+    background-color: aqua;
+}
+
+nav ul li a{
+    justify-content: center;
+    align-items: center;
+    color: wheat;
+}
+
